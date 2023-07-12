@@ -26,20 +26,41 @@
 * SPECIAL_CONSIDERATIONS—Special considerations for application
 * ASK_AMT—Funding amount requested
 * IS_SUCCESSFUL—Was the money used effectively
-* Explain the purpose of this analysis.
 
 ## Results: 
-Using bulleted lists and images to support your answers, address the following questions:
+
+![alphabet_soup]()
 
 ### Data Preprocessing
 
 * What variable(s) are the target(s) for your model?
+        * CLASSIFICATION and APPLICATION_TYPE
 * What variable(s) are the features for your model?
+        * IS_SUCCESSFUL
+        * This is the column we are trying to train the model to predict
 * What variable(s) should be removed from the input data because they are neither targets nor features?
-* Compiling, Training, and Evaluating the Model
+        * EIN and NAME
+        * These columns were dropped because they are variables that do not have a significant impact on whether a candidate is successful or not
+  
+### Compiling, Training, and Evaluating the Model
 
 * How many neurons, layers, and activation functions did you select for your neural network model, and why?
+        * Although I tested many different amount of layers, neurons, and activation functions, these are the values I ended with
+        * Layers =
+        * Neurons:
+              * Layer 1:
+              * Layer 2:
+              * Layer 3:
+              * Layer 4:
 * Were you able to achieve the target model performance?
+        * No
 * What steps did you take in your attempts to increase model performance?
+        * Increase the number of hidden layers
+        * Adjust the number of neurons on each hidden layer
+        * Used Dropout to prevent overfitting
+        * Try different activation functions (relu, tanh, softmax)
+        * Drop additional columns that may have been contributing to lower accuracy
+     
 
-## Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+## Summary: 
+
