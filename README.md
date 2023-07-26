@@ -32,25 +32,31 @@
 ### Data Preprocessing
 
 * What variable(s) are the target(s) for your model?
+
         - CLASSIFICATION and APPLICATION_TYPE
 * What variable(s) are the features for your model?
+  
         - IS_SUCCESSFUL
         - This is the column we are trying to train the model to predict
 * What variable(s) should be removed from the input data because they are neither targets nor features?
+  
         - EIN
         - These columns were dropped because they are variables that do not have a significant impact on whether a candidate is successful or not
   
 ### Compiling, Training, and Evaluating the Model
 
 * How many neurons, layers, and activation functions did you select for your neural network model, and why?
+  
         - Although I tested many different amount of layers, neurons, and activation functions, these are the values I ended with
         - Layers =
         - Neurons:
               - Layer 1:
               - Layer 2:            
-* Were you able to achieve the target model performance?
+* Were you able to achieve the target model performance
+  
         - Yes : Above 75% accuracy
 * What steps did you take in your attempts to increase model performance?
+  
         - Increase the number of hidden layers
         - Adjust the number of neurons on each hidden layer
         - Used Dropout to prevent overfitting
